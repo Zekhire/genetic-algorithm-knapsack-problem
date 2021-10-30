@@ -306,11 +306,11 @@ def test():
 
         # numberOfSet = str(3)
         numberOfSet = str(i)
-        linesC = [line.rstrip('\n') for line in open('tests\P0'+numberOfSet+'\p0'+numberOfSet+'_c.txt')]
+        linesC = [line.rstrip('\n') for line in open('tests/P0'+numberOfSet+'/p0'+numberOfSet+'_c.txt')]
         B = int(linesC[0])
 
-        linesW = [line.rstrip('\n') for line in open('tests\P0'+numberOfSet+'\p0'+numberOfSet+'_w.txt')]
-        linesP = [line.rstrip('\n') for line in open('tests\P0'+numberOfSet+'\p0'+numberOfSet+'_p.txt')]
+        linesW = [line.rstrip('/n') for line in open('tests/P0'+numberOfSet+'/p0'+numberOfSet+'_w.txt')]
+        linesP = [line.rstrip('/n') for line in open('tests/P0'+numberOfSet+'/p0'+numberOfSet+'_p.txt')]
 
         N = len(linesP)
 
@@ -318,7 +318,7 @@ def test():
         for i in range(N):
             knickKnacksList.append(KnickKnack(int(linesP[i]), int(linesW[i])))
 
-        linesS = [line.rstrip('\n') for line in open('tests\P0'+numberOfSet+'\p0'+numberOfSet+'_s.txt')]
+        linesS = [line.rstrip('/n') for line in open('tests/P0'+numberOfSet+'/p0'+numberOfSet+'_s.txt')]
         correctOutput = []
         for i in range(N):
             correctOutput.append(int(linesS[i]))
